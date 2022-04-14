@@ -1,0 +1,14 @@
+[package]
+edition = "2021"
+license = "MIT OR Apache-2.0"
+name = "worker"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = "0.4.19"
+clokwerk = {git = "https://github.com/alyti/clokwerk", branch = "serde"}
+eyre = "0.6"
+tokio = {version = "1.8", features = ["macros", "rt-multi-thread"]}
+tokio-util = "0.7.1"
